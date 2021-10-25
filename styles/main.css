@@ -7,7 +7,7 @@
 }
 
 html {
-    background-color: #B996CE;
+    background-color: #D3D3D3;
     overflow: hidden;
 }
 
@@ -22,15 +22,15 @@ main {
 
 /* Right side */
 #mainPart {
-    width: 70%;
+    width: 100%;
     margin: auto;
     margin-bottom: 70px;
 }
 
 .mainSection {
     background-color: #A486B7;
-    border: solid 3px #D3D3D3;
-    height: 700px;
+    /*border-bottom: solid 10px #D3D3D3;*/
+    height: 100vh;
     margin: 15px auto;
 }
 
