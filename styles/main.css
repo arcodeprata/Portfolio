@@ -53,17 +53,17 @@ p {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 18px;
+    padding: 0px 20px;
     align-content: space-between;
 }
 
 .column {
     width: 23%;
-    margin: 0px auto;
+    margin: 20px auto 20px auto;
 }
 
     .column img {
-        margin-top: 18px;
+        margin-top: 10px;
         width: 100%;
         cursor: pointer;
         transition: 0.3s;
