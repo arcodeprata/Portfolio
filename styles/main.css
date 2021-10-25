@@ -29,7 +29,6 @@ main {
 .mainSection {
     background-color: #A486B7;
     height: 100vh;
-    margin: 15px auto;
 }
 
 .fixedContentSize {
@@ -66,7 +65,6 @@ p {
     .column img {
         margin-top: 18px;
         width: 100%;
-        border: solid 4px black;
         cursor: pointer;
         transition: 0.3s;
     }
