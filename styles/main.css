@@ -24,7 +24,6 @@ main {
 #mainPart {
     width: 100%;
     margin: auto;
-    margin-bottom: 70px;
 }
 
 .mainSection {
@@ -60,7 +59,7 @@ p {
 }
 
 .column {
-    max-width: 23%;
+    width: 23%;
     margin: 0px auto;
 }
 
@@ -95,8 +94,7 @@ p {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 600px;
+    width: 30%;
 }
 
 #caption {
@@ -148,11 +146,4 @@ p {
     .modal-content {
         width: 100%;
     }
-}
-
-/* Footer */
-footer {
-    display: flex;
-    padding: 50px;
-    background-color: #705B7C;
 }
