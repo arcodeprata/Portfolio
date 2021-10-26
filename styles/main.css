@@ -8,7 +8,7 @@
 
 html {
     background-color: #A486B7;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body {
@@ -17,18 +17,20 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
-/* Right side */
+/* Right side | Bottom */
 #mainPart {
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
 .mainSection {
     background-color: #A486B7;
     height: 100vh;
+    margin-bottom: 15px;
 }
 
 .fixedContentSize {
@@ -36,11 +38,12 @@ main {
     flex-direction: column;
     overflow-y: auto;
     height: 100%;
+    border: solid 5px #D3D3D3;
 }
 
-/* Presentation */
+    /* Presentation */
     .fixedContentSize p {
-        margin: 50px;
+        margin: 30px;
     }
 
 p {
@@ -58,7 +61,7 @@ p {
 }
 
 .column {
-    width: 23%;
+    width: 100%;
     margin: 20px auto 20px auto;
 }
 
@@ -149,52 +152,142 @@ p {
 /* Menu */
 
 #menuSide {
-    width: 20%;
-    background: white;
-    border-right: solid 3px #D3D3D3;
-    height: auto;
+    display: none;
 }
-
-.logoArcodeprata {
-    position: fixed;
-    align-self: center;
-    margin-top: 20px;
-}
-
-#linksMenu {
-    position: fixed;
-    text-align: center;
-    align-self: center;
-    margin-top: 8%;
-}
-
-    #linksMenu ul {
-        list-style: none;
-    }
-
-    #linksMenu li {
-        margin: 0px 0px 18px 0px;
-    }
-
-    #linksMenu a {
-        font-weight: bold;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        font-size: 18px;
-        text-decoration: none;
-        letter-spacing: 0.15em;
-        color: black;
-        display: block;
-        padding: 2px 0px 2px 0px;
-    }
-
-        #linksMenu a:hover {
-            background-color: #D3D3D3;
-            padding: 2px 10px 2px 10px;
-        }
 
 .mainColumn {
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (min-width: 760px)
+{
+    html
+    {
+        overflow: hidden;
+    }
+
+    main{
+        flex-direction: row;
+    }
+
+    /* Right side */
+    #mainPart {
+        width: 100%;
+    }
+
+    .fixedContentSize {
+        border: none;
+    }
+
+        /* Presentation */
+        .fixedContentSize p {
+            margin: 40px;
+        }
+
+    /* Images grid */
+
+    .column {
+        width: 45%;
+    }
+
+    /* Modal image */
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 30%;
+    }
+
+    /* Menu */
+
+    #menuSide {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        background-color: white;
+        border-right: solid 3px #D3D3D3;
+        height: auto;
+    }
+
+    .logoArcodeprata {
+        position: fixed;
+        align-self: center;
+        margin-top: 0px;
+    }
+
+    #linksMenu {
+        position: fixed;
+        text-align: center;
+        align-self: center;
+        margin-top: 8%;
+    }
+
+        #linksMenu ul {
+            list-style: none;
+        }
+
+        #linksMenu li {
+            margin: 0px 0px 10px 0px;
+        }
+
+        #linksMenu a {
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            font-size: 16px;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            color: black;
+            display: block;
+            padding: 2px 0px 2px 0px;
+        }
+
+            #linksMenu a:hover {
+                background-color: #D3D3D3;
+                padding: 2px 8px 2px 8px;
+            }
+}
+
+@media only screen and (min-width: 1024px) 
+{
+        /* Presentation */
+        .fixedContentSize p {
+            margin: 50px;
+        }
+
+    /* Images grid */
+
+    .column {
+        width: 23%;
+    }
+
+    /* Modal image */
+
+    .modal-content {
+        width: 30%;
+    }
+
+    /* Menu */
+
+    #menuSide {
+        width: 20%;
+    }
+
+    .logoArcodeprata {
+        margin-top: 20px;
+    }
+
+    #linksMenu {
+        margin-top: 10%;
+    }
+
+        #linksMenu li {
+            margin: 0px 0px 18px 0px;
+        }
+
+        #linksMenu a {
+            font-size: 18px;
+        }
 }
