@@ -101,7 +101,7 @@ function create_divNav() {
     document.getElementById('liSmallIndex').appendChild(indexLinkSmall);
 
     let indexImgLink = document.createElement('img');
-    indexImgLink.src = 'images/icons/menuTst.png';
+    indexImgLink.src = 'images/icons/indexIcon.png';
     document.getElementById('indexLinkSmall').appendChild(indexImgLink);
 
             // Pixel art
@@ -115,7 +115,7 @@ function create_divNav() {
     document.getElementById('liSmallPixel').appendChild(pixelLinkSmall);
 
     let pixelImgLink = document.createElement('img');
-    pixelImgLink.src = 'images/icons/menuTst.png';
+    pixelImgLink.src = 'images/icons/pixelArtIcon.png';
     document.getElementById('pixelLinkSmall').appendChild(pixelImgLink);
 
             // Illustrations
@@ -129,7 +129,7 @@ function create_divNav() {
     document.getElementById('liSmallIllustrations').appendChild(illustrationsLinkSmall);
 
     let illustrationsImgLink = document.createElement('img');
-    illustrationsImgLink.src = 'images/icons/menuTst.png';
+    illustrationsImgLink.src = 'images/icons/illustrationsIcon.png';
     document.getElementById('illustrationsLinkSmall').appendChild(illustrationsImgLink);
 
             // Assets
@@ -143,7 +143,7 @@ function create_divNav() {
     document.getElementById('liSmallAssets').appendChild(assetsLinkSmall);
 
     let assetsImgLink = document.createElement('img');
-    assetsImgLink.src = 'images/icons/menuTst.png';
+    assetsImgLink.src = 'images/icons/assetsIcon.png';
     document.getElementById('assetsLinkSmall').appendChild(assetsImgLink);
 
             // Commissions
@@ -157,6 +157,6 @@ function create_divNav() {
     document.getElementById('liSmallCommissions').appendChild(commissionsLinkSmall);
 
     let commissionsImgLink = document.createElement('img');
-    commissionsImgLink.src = 'images/icons/menuTst.png';
+    commissionsImgLink.src = 'images/icons/commissionsIcon.png';
     document.getElementById('commissionsLinkSmall').appendChild(commissionsImgLink);
 }
