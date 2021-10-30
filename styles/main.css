@@ -8,7 +8,8 @@
 
 html {
     background-color: #A486B7;
-    overflow: auto;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -25,6 +26,7 @@ main {
 #mainPart {
     width: 80%;
     margin: auto;
+    margin-right: 10px;
 }
 
 .mainSection {
@@ -38,13 +40,11 @@ main {
     flex-direction: column;
     overflow-y: auto;
     height: 100%;
-    border: solid 5px #D3D3D3;
 }
 
-    /* Presentation */
-    .fixedContentSize p {
-        margin: 30px;
-    }
+.fixedContentSize p {
+    margin: 30px;
+}
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -152,7 +152,54 @@ p {
 /* Menu */
 
 #menuSide {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: white;
+    border-right: solid 3px #D3D3D3;
+    height: 100%;
+}
+
+.logoArcodeprata {
+    position: fixed;
+    align-self: center;
+    margin-top: 20px;
+}
+
+#logoArcodeprataSmall {
+    display: block;
+    margin: auto;
+}
+
+#logoArcodeprata {
     display: none;
+}
+
+#linksMenuSmall {
+    display: block;
+    position: fixed;
+    text-align: center;
+    align-self: center;
+    margin-top: 25%;
+}
+
+#linksMenu {
+    display: none;
+}
+
+#linksMenuSmall ul {
+    list-style: none;
+}
+
+#linksMenuSmall li {
+    margin: 0px 0px 10px 0px;
+}
+
+#linksMenuSmall a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 2px 0px 2px 0px;
 }
 
 .mainColumn {
@@ -161,13 +208,16 @@ p {
     flex-direction: column;
 }
 
+@media only screen and (min-width: 530px)
+{
+    #linksMenuSmall{
+        margin-top: 15%;
+    }
+}
+
+
 @media only screen and (min-width: 760px)
 {
-    html
-    {
-        overflow: hidden;
-    }
-
     main{
         flex-direction: row;
     }
@@ -176,15 +226,10 @@ p {
     #mainPart {
         width: 100%;
     }
-
-    .fixedContentSize {
-        border: none;
-    }
-
         /* Presentation */
-        .fixedContentSize p {
-            margin: 40px;
-        }
+    .fixedContentSize p {
+        margin: 40px;
+    }
 
     /* Images grid */
 
@@ -206,9 +251,7 @@ p {
         display: flex;
         flex-direction: column;
         width: 30%;
-        background-color: white;
         border-right: solid 3px #D3D3D3;
-        height: auto;
     }
 
     .logoArcodeprata {
@@ -217,7 +260,21 @@ p {
         margin-top: 0px;
     }
 
+        #logoArcodeprata
+        {
+            display: block;
+        }
+
+        #logoArcodeprataSmall{
+            display: none;
+        }
+
+        #linksMenuSmall {
+            display: none;
+        }
+
     #linksMenu {
+        display: block;
         position: fixed;
         text-align: center;
         align-self: center;
@@ -253,9 +310,9 @@ p {
 @media only screen and (min-width: 1024px) 
 {
         /* Presentation */
-        .fixedContentSize p {
-            margin: 50px;
-        }
+    .fixedContentSize p {
+        margin: 50px;
+    }
 
     /* Images grid */
 
@@ -277,6 +334,16 @@ p {
 
     .logoArcodeprata {
         margin-top: 20px;
+        position: fixed;
+        align-self: center;
+    }
+
+    #logoArcodeprataSmall {
+        display: none;
+    }
+
+    #logoArcodeprata {
+        display: block;
     }
 
     #linksMenu {
