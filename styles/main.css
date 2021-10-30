@@ -21,16 +21,28 @@ main {
     height: 100%;
 }
 
-.logoArco{
-    margin: auto;
-    margin-top: 10px;
-    align-self: center;
-    margin-bottom: 0px;
-}
-
-#presentation{
+#presentation {
     display: flex;
     flex-direction: column;
+}
+
+.logoArco {
+    margin: auto;
+    align-self: center;
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+
+.presentationCoTxt{
+    margin-top: 50px;
+}
+
+.presentationTxt{
+    margin-bottom: 10px;
+}
+
+.presentationTxt, .contactTxt{
+    margin-top: 5px;
 }
 
 /* Right side | Bottom */
@@ -53,9 +65,10 @@ main {
     height: 100%;
 }
 
-.fixedContentSize p {
-    margin: 30px;
-}
+    .fixedContentSize p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -239,7 +252,8 @@ p {
     }
         /* Presentation */
     .fixedContentSize p {
-        margin: 40px;
+        margin-right: 40px;
+        margin-left: 40px;
     }
 
     /* Images grid */
@@ -322,7 +336,8 @@ p {
 {
         /* Presentation */
     .fixedContentSize p {
-        margin: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
     }
 
     /* Images grid */
