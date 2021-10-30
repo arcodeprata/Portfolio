@@ -21,9 +21,11 @@ main {
     height: 100%;
 }
 
-#logoArco{
+.logoArco{
     margin: auto;
-    margin-top: 5px;
+    margin-top: 10px;
+    align-self: center;
+    margin-bottom: 0px;
 }
 
 #presentation{
@@ -287,7 +289,7 @@ p {
         position: fixed;
         text-align: center;
         align-self: center;
-        margin-top: 8%;
+        margin-top: 12%;
     }
 
         #linksMenu ul {
