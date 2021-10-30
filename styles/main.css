@@ -18,8 +18,17 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
     height: 100%;
+}
+
+#logoArco{
+    margin: auto;
+    margin-top: 5px;
+}
+
+#presentation{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Right side | Bottom */
