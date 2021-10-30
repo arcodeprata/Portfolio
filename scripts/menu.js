@@ -60,16 +60,6 @@ function create_divNav() {
     illustrationsLink.innerHTML = 'Illustrations';
     document.getElementById('liBigIllustrations').appendChild(illustrationsLink);
 
-            // Assets
-    let assetsList = document.createElement('li');
-    assetsList.id = 'liBigAsset';
-    document.getElementById('ulBig').appendChild(assetsList);
-
-    let assetsLink = document.createElement('a');
-    assetsLink.href = 'assets.html';
-    assetsLink.innerHTML = 'Assets';
-    document.getElementById('liBigAsset').appendChild(assetsLink);
-
             // Commissions
     let commissionsList = document.createElement('li');
     commissionsList.id = 'liBigCommissions';
@@ -131,20 +121,6 @@ function create_divNav() {
     let illustrationsImgLink = document.createElement('img');
     illustrationsImgLink.src = 'images/icons/illustrationsIcon.png';
     document.getElementById('illustrationsLinkSmall').appendChild(illustrationsImgLink);
-
-            // Assets
-    let assetsListSmall = document.createElement('li');
-    assetsListSmall.id = 'liSmallAssets';
-    document.getElementById('ulSmall').appendChild(assetsListSmall);
-
-    let assetsLinkSmall = document.createElement('a');
-    assetsLinkSmall.id = 'assetsLinkSmall';
-    assetsLinkSmall.href = 'assets.html';
-    document.getElementById('liSmallAssets').appendChild(assetsLinkSmall);
-
-    let assetsImgLink = document.createElement('img');
-    assetsImgLink.src = 'images/icons/assetsIcon.png';
-    document.getElementById('assetsLinkSmall').appendChild(assetsImgLink);
 
             // Commissions
     let commissionsListSmall = document.createElement('li');
