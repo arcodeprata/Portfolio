@@ -5,7 +5,7 @@ function create_divNav() {
     // Logo
     let logoLink = document.createElement('a');
     logoLink.className = 'logoArcodeprata';
-    logoLink.href = 'index.html';
+    logoLink.href = 'https://arcodeprata.github.io/Portfolio/';
     logoLink.id = 'logoLink';
     document.getElementById('menuSide').appendChild(logoLink);
 
@@ -36,7 +36,7 @@ function create_divNav() {
     document.getElementById('ulBig').appendChild(indexList);
 
     let indexLink = document.createElement('a');
-    indexLink.href = 'index.html';
+    indexLink.href = 'https://arcodeprata.github.io/Portfolio/';
     indexLink.innerHTML = 'Home';
     document.getElementById('liBigIndex').appendChild(indexLink);
 
@@ -76,7 +76,7 @@ function create_divNav() {
 
     let indexLinkSmall = document.createElement('a');
     indexLinkSmall.id = 'indexLinkSmall';
-    indexLinkSmall.href = 'index.html';
+    indexLinkSmall.href = 'https://arcodeprata.github.io/Portfolio/';
     document.getElementById('liSmallIndex').appendChild(indexLinkSmall);
 
     let indexImgLink = document.createElement('img');
