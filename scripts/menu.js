@@ -60,17 +60,6 @@ function create_divNav() {
     illustrationsLink.innerHTML = 'Illustrations';
     document.getElementById('liBigIllustrations').appendChild(illustrationsLink);
 
-            // Commissions
-    let commissionsList = document.createElement('li');
-    commissionsList.id = 'liBigCommissions';
-    document.getElementById('ulBig').appendChild(commissionsList);
-
-    let commissionsLink = document.createElement('a');
-    commissionsLink.href = 'commissions.html';
-    commissionsLink.innerHTML = 'Commissions';
-    document.getElementById('liBigCommissions').appendChild(commissionsLink);
-
-
     // Links nav small
     let navLinksSmall = document.createElement('nav');
     navLinksSmall.id = 'linksMenuSmall';
@@ -121,18 +110,4 @@ function create_divNav() {
     let illustrationsImgLink = document.createElement('img');
     illustrationsImgLink.src = 'images/icons/illustrationsIcon.png';
     document.getElementById('illustrationsLinkSmall').appendChild(illustrationsImgLink);
-
-            // Commissions
-    let commissionsListSmall = document.createElement('li');
-    commissionsListSmall.id = 'liSmallCommissions';
-    document.getElementById('ulSmall').appendChild(commissionsListSmall);
-
-    let commissionsLinkSmall = document.createElement('a');
-    commissionsLinkSmall.id = 'commissionsLinkSmall';
-    commissionsLinkSmall.href = 'commissions.html';
-    document.getElementById('liSmallCommissions').appendChild(commissionsLinkSmall);
-
-    let commissionsImgLink = document.createElement('img');
-    commissionsImgLink.src = 'images/icons/commissionsIcon.png';
-    document.getElementById('commissionsLinkSmall').appendChild(commissionsImgLink);
 }

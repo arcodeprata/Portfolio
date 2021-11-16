@@ -8,20 +8,25 @@
 
 html {
     background-color: #A486B7;
-    height: 100%;
     overflow: hidden;
 }
 
-body {
+html, body, main {
     height: 100%;
 }
 
-main {
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.rowDisplay {
     display: flex;
-    height: 100%;
+    flex-direction: row;
 }
 
-#presentation {
+.columnDisplay{
     display: flex;
     flex-direction: column;
 }
@@ -59,8 +64,6 @@ main {
 }
 
 .fixedContentSize {
-    display: flex;
-    flex-direction: column;
     overflow-y: auto;
     height: 100%;
 }
@@ -69,12 +72,6 @@ main {
         margin-left: 30px;
         margin-right: 30px;
     }
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    text-align: justify;
-}
 
 /* Images grid */
 .row {
