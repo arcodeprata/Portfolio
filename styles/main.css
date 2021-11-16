@@ -15,10 +15,33 @@ html, body, main {
     height: 100%;
 }
 
-p {
+p, h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     text-align: justify;
+}
+
+h3{
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
+.borderMiddle {
+    border-right: 1px solid black;
+}
+
+.tablePrice {
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.centerTxt {
+    text-align: center;
+}
+
+.justifyContentTable{
+    justify-content: space-evenly;
 }
 
 .rowDisplay {
