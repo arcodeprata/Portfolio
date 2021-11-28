@@ -262,10 +262,37 @@ h3{
     flex-direction: column;
 }
 
-@media only screen and (min-width: 530px)
-{
+#lang-switch {
+    position: fixed;
+    margin-top: 97vh;
+    margin-left: 0px;
+    width: 10%;
+}
+
+.smallOption {
+    display: block;
+}
+
+.bigOption {
+    display: none;
+}
+
+@media only screen and (min-width: 530px) {
     #linksMenuSmall{
         margin-top: 15%;
+    }
+
+    #lang-switch {
+        position: fixed;
+        margin-top: 97vh;
+    }
+
+    .smallOption{
+        display: none;
+    }
+
+    .bigOption{
+        display: block;
     }
 }
 
@@ -360,6 +387,10 @@ h3{
                 background-color: #D3D3D3;
                 padding: 2px 8px 2px 8px;
             }
+
+    #lang-switch {
+        margin-left: 5px;
+    }
 }
 
 @media only screen and (min-width: 1024px) 

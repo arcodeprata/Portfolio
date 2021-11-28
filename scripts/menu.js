@@ -38,7 +38,16 @@ function create_divNav() {
     let indexLink = document.createElement('a');
     indexLink.href = 'https://arcodeprata.github.io/Portfolio/';
     indexLink.innerHTML = 'Home';
+    indexLink.classList = 'lang en';
+    indexLink.lang = 'en';
     document.getElementById('liBigIndex').appendChild(indexLink);
+
+    let indexLinkPT = document.createElement('a');
+    indexLinkPT.href = 'https://arcodeprata.github.io/Portfolio/';
+    indexLinkPT.innerHTML = 'Home';
+    indexLinkPT.classList = 'lang pt';
+    indexLink.lang = 'pt';
+    document.getElementById('liBigIndex').appendChild(indexLinkPT);
 
             // Pixel art
     let pixelList = document.createElement('li');
@@ -48,7 +57,16 @@ function create_divNav() {
     let pixelArtLink = document.createElement('a');
     pixelArtLink.href = 'pixelArt.html';
     pixelArtLink.innerHTML = 'Pixel art';
+    pixelArtLink.classList = 'lang en';
+    pixelArtLink.lang = 'en';
     document.getElementById('liBigPixel').appendChild(pixelArtLink);
+
+    let pixelArtLinkPT = document.createElement('a');
+    pixelArtLinkPT.href = 'pixelArt.html';
+    pixelArtLinkPT.innerHTML = 'Pixel art';
+    pixelArtLinkPT.classList = 'lang pt';
+    pixelArtLinkPT.lang = 'pt';
+    document.getElementById('liBigPixel').appendChild(pixelArtLinkPT);
 
             // Illustrations
     let illustrationList = document.createElement('li');
@@ -58,7 +76,16 @@ function create_divNav() {
     let illustrationsLink = document.createElement('a');
     illustrationsLink.href = 'illustrations.html';
     illustrationsLink.innerHTML = 'Illustrations';
+    illustrationsLink.classList = 'lang en';
+    illustrationsLink.lang = 'en';
     document.getElementById('liBigIllustrations').appendChild(illustrationsLink);
+
+    let illustrationsLinkPT = document.createElement('a');
+    illustrationsLinkPT.href = 'illustrations.html';
+    illustrationsLinkPT.innerHTML = 'Illustrations';
+    illustrationsLinkPT.classList = 'lang pt';
+    illustrationsLinkPT.lang = 'pt';
+    document.getElementById('liBigIllustrations').appendChild(illustrationsLinkPT);
 
     // Links nav small
     let navLinksSmall = document.createElement('nav');
@@ -110,4 +137,36 @@ function create_divNav() {
     let illustrationsImgLink = document.createElement('img');
     illustrationsImgLink.src = 'images/icons/illustrationsIcon.png';
     document.getElementById('illustrationsLinkSmall').appendChild(illustrationsImgLink);
+
+    // Create Lang nav
+    let selectLang = document.createElement('select');
+    selectLang.id = "lang-switch";
+    selectLang.addEventListener('change', function () {
+        changeLanguage(this.value);
+    });
+    document.getElementById('menuSide').appendChild(selectLang);
+
+    let englishOption = document.createElement('option');
+    englishOption.value = "en";
+    englishOption.innerHTML = "English";
+    englishOption.classList = 'bigOption';
+    document.getElementById('lang-switch').appendChild(englishOption);
+
+    let smallEnglishOption = document.createElement('option');
+    smallEnglishOption.value = "en";
+    smallEnglishOption.innerHTML = "EN";
+    smallEnglishOption.classList = "smallOption";
+    document.getElementById('lang-switch').appendChild(smallEnglishOption);
+
+    let portugueseOption = document.createElement('option');
+    portugueseOption.value = "pt";
+    portugueseOption.innerHTML = "Português";
+    portugueseOption.classList = 'bigOption';
+    document.getElementById('lang-switch').appendChild(portugueseOption);
+
+    let smallPortugueseOption = document.createElement('option');
+    smallPortugueseOption.value = "pt";
+    smallPortugueseOption.innerHTML = "PT";
+    smallPortugueseOption.classList = "smallOption";
+    document.getElementById('lang-switch').appendChild(smallPortugueseOption);
 }

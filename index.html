@@ -30,9 +30,6 @@
 </head>
 
 <body>
-    <header>
-    </header>
-
     <main id="main" class="rowDisplay">
         <script defer src="scripts/menu.js"></script>
         <aside id="menuSide" class="mainColumn">
@@ -41,22 +38,32 @@
         <section id="mainPart" class="mainColumn">
             <div class="fixedContentSize columnDisplay">
                 <section class="mainSection columnDisplay">
-                    <div class="logoArco" >
-                        <img src="images/logos/logoArcodeprata3.png" id="indexBanner"/>
+                    <div class="logoArco">
+                        <img src="images/logos/logoArcodeprata3.png" id="indexBanner" />
                     </div>
-                    <div class="presentationTxt">
+                    <div class="presentationTxt lang en" lang="en">
                         <p>
                             This is a presentation texte
                         </p>
                     </div>
-                    
-                    <div class="contactTxt">
+                    <div class="presentationTxt lang pt" lang="pt">
                         <p>
-                            If you wish to contact me, you can email me at <a href="mailto:email@gmail.com" class="email underline">email@gmail.com</a> 
+                            This is a presentation texte in portuguese
                         </p>
                     </div>
 
-                    <div class="tablePrice columnDisplay">
+                    <div class="contactTxt lang en" lang="en">
+                        <p>
+                            If you wish to contact me, you can email me at <a href="mailto:email@gmail.com" class="email underline">email@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contactTxt lang pt" lang="pt">
+                        <p>
+                            If you wish to contact me, you can email me at <a href="mailto:email@gmail.com" class="email underline">email@gmail.com</a> - Portuguese
+                        </p>
+                    </div>
+
+                    <div class="tablePrice columnDisplay lang en" lang="en">
                         <div class="rowDisplay justifyContentTable">
                             <div class="columnDisplay borderMiddle">
                                 <h3 class="centerTxt">Type of art</h3>
@@ -74,12 +81,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="tablePrice columnDisplay lang pt" lang="pt">
+                        <div class="rowDisplay justifyContentTable">
+                            <div class="columnDisplay borderMiddle">
+                                <h3 class="centerTxt">Type of art</h3>
+                                <div>
+                                    <p class="centerTxt">This is an art form pt</p>
+                                    <p class="centerTxt">This is another art form pt</p>
+                                </div>
+                            </div>
+                            <div class="columnDisplay">
+                                <h3 class="centerTxt">Prices</h3>
+                                <div>
+                                    <p class="centerTxt">This is a price pt</p>
+                                    <p class="centerTxt">This is a second price pt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
-
-
         </section>
     </main>
-</body>
 
+    <script defer src="scripts/language.js"></script>
+</body>
 </html>
