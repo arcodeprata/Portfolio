@@ -160,7 +160,7 @@ function create_divNav() {
 
     let portugueseOption = document.createElement('option');
     portugueseOption.value = "pt";
-    portugueseOption.innerHTML = "Português";
+    portugueseOption.innerHTML = "Portugu\u00eas";
     portugueseOption.classList = 'bigOption';
     document.getElementById('lang-switch').appendChild(portugueseOption);
 
