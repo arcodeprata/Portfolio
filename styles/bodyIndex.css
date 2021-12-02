@@ -92,6 +92,10 @@ hr{
     margin-bottom: 20px;
 }
 
+.middleSection p a, .middleSection p a:hover, .middleSection p a:visited{
+    color: black;
+}
+
 .middleImgContainer{
     justify-content: space-between;
     align-content: center;
