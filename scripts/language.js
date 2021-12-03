@@ -59,5 +59,7 @@ function changeLanguage(langSelected) {
             break;
     }
 
+    document.documentElement.lang = lang;
+
     saveLanguagePref(lang);
 }
